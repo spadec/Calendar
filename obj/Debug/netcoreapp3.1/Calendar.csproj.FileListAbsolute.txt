@@ -1,0 +1,15 @@
+D:\ASP.NET\Calendar\Calendar\bin\Debug\netcoreapp3.1\Calendar.exe
+D:\ASP.NET\Calendar\Calendar\bin\Debug\netcoreapp3.1\Calendar.deps.json
+D:\ASP.NET\Calendar\Calendar\bin\Debug\netcoreapp3.1\Calendar.runtimeconfig.json
+D:\ASP.NET\Calendar\Calendar\bin\Debug\netcoreapp3.1\Calendar.runtimeconfig.dev.json
+D:\ASP.NET\Calendar\Calendar\bin\Debug\netcoreapp3.1\Calendar.dll
+D:\ASP.NET\Calendar\Calendar\bin\Debug\netcoreapp3.1\Calendar.pdb
+D:\ASP.NET\Calendar\Calendar\obj\Debug\netcoreapp3.1\Calendar.csprojAssemblyReference.cache
+D:\ASP.NET\Calendar\Calendar\obj\Debug\netcoreapp3.1\Calendar.Form1.resources
+D:\ASP.NET\Calendar\Calendar\obj\Debug\netcoreapp3.1\Calendar.csproj.GenerateResource.cache
+D:\ASP.NET\Calendar\Calendar\obj\Debug\netcoreapp3.1\Calendar.AssemblyInfoInputs.cache
+D:\ASP.NET\Calendar\Calendar\obj\Debug\netcoreapp3.1\Calendar.AssemblyInfo.cs
+D:\ASP.NET\Calendar\Calendar\obj\Debug\netcoreapp3.1\Calendar.csproj.CoreCompileInputs.cache
+D:\ASP.NET\Calendar\Calendar\obj\Debug\netcoreapp3.1\Calendar.dll
+D:\ASP.NET\Calendar\Calendar\obj\Debug\netcoreapp3.1\Calendar.pdb
+D:\ASP.NET\Calendar\Calendar\obj\Debug\netcoreapp3.1\Calendar.genruntimeconfig.cache
