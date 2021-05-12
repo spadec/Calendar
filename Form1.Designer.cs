@@ -30,92 +30,62 @@ namespace Calendar
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.workSecondDay = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.workFirstDay = new System.Windows.Forms.RadioButton();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.weekendFirstDay = new System.Windows.Forms.RadioButton();
+            this.weekendSecondDay = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.radioButton4);
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton3);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.weekendSecondDay);
+            this.panel1.Controls.Add(this.weekendFirstDay);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Controls.Add(this.workSecondDay);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.workFirstDay);
+            this.panel1.Location = new System.Drawing.Point(12, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(332, 95);
+            this.panel1.Size = new System.Drawing.Size(327, 76);
             this.panel1.TabIndex = 1;
             // 
-            // radioButton4
+            // workSecondDay
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(197, 65);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(92, 19);
-            this.radioButton4.TabIndex = 5;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "второй день";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(9, 65);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(92, 19);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "второй день";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(197, 40);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(95, 19);
-            this.radioButton3.TabIndex = 4;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "первый день";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.workSecondDay.AutoSize = true;
+            this.workSecondDay.Location = new System.Drawing.Point(9, 49);
+            this.workSecondDay.Name = "workSecondDay";
+            this.workSecondDay.Size = new System.Drawing.Size(92, 19);
+            this.workSecondDay.TabIndex = 2;
+            this.workSecondDay.TabStop = true;
+            this.workSecondDay.Text = "второй день";
+            this.workSecondDay.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 9);
+            this.label2.Location = new System.Drawing.Point(9, 6);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Сегодня я работаю: ";
             // 
-            // label1
+            // workFirstDay
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(197, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 15);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Сегодня я отдыхаю:";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(9, 40);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(95, 19);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "первый день";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.workFirstDay.AutoSize = true;
+            this.workFirstDay.Location = new System.Drawing.Point(9, 24);
+            this.workFirstDay.Name = "workFirstDay";
+            this.workFirstDay.Size = new System.Drawing.Size(95, 19);
+            this.workFirstDay.TabIndex = 2;
+            this.workFirstDay.TabStop = true;
+            this.workFirstDay.Text = "первый день";
+            this.workFirstDay.UseVisualStyleBackColor = true;
+            this.workFirstDay.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // monthCalendar1
             // 
@@ -124,18 +94,60 @@ namespace Calendar
             this.monthCalendar1.CausesValidation = false;
             this.monthCalendar1.FirstDayOfWeek = System.Windows.Forms.Day.Monday;
             this.monthCalendar1.ForeColor = System.Drawing.SystemColors.Info;
-            this.monthCalendar1.Location = new System.Drawing.Point(12, 119);
+            this.monthCalendar1.Location = new System.Drawing.Point(7, 90);
             this.monthCalendar1.MinDate = new System.DateTime(1999, 12, 31, 0, 0, 0, 0);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 3;
             this.monthCalendar1.TrailingForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(223, 264);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(189, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 15);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Сегодня я отдыхаю:";
+            // 
+            // weekendFirstDay
+            // 
+            this.weekendFirstDay.AutoSize = true;
+            this.weekendFirstDay.Location = new System.Drawing.Point(189, 24);
+            this.weekendFirstDay.Name = "weekendFirstDay";
+            this.weekendFirstDay.Size = new System.Drawing.Size(95, 19);
+            this.weekendFirstDay.TabIndex = 4;
+            this.weekendFirstDay.TabStop = true;
+            this.weekendFirstDay.Text = "первый день";
+            this.weekendFirstDay.UseVisualStyleBackColor = true;
+            // 
+            // weekendSecondDay
+            // 
+            this.weekendSecondDay.AutoSize = true;
+            this.weekendSecondDay.Location = new System.Drawing.Point(189, 49);
+            this.weekendSecondDay.Name = "weekendSecondDay";
+            this.weekendSecondDay.Size = new System.Drawing.Size(92, 19);
+            this.weekendSecondDay.TabIndex = 5;
+            this.weekendSecondDay.TabStop = true;
+            this.weekendSecondDay.Text = "второй день";
+            this.weekendSecondDay.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(357, 292);
+            this.ClientSize = new System.Drawing.Size(347, 302);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
@@ -149,12 +161,13 @@ namespace Calendar
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton workSecondDay;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton workFirstDay;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton weekendSecondDay;
+        private System.Windows.Forms.RadioButton weekendFirstDay;
         private System.Windows.Forms.Label label1;
     }
 }
